@@ -6,7 +6,7 @@ Docker image with all the necessary utilities to backup a Postgres or MariaDB/My
 - mysqldump
 - various compressors (gzip, bzip2, xz, lzip, zstd) along with their parallel versions, if available
 - gpg
-- mc (minio client) for S3 uploads
+- mcli (minio client) for S3 uploads
 
 See [Dockerfile](Dockerfile) for a full list of installed packages.
 
@@ -52,5 +52,5 @@ spec:
                   lzip |\
                   MC_HOST_s3="https://$S3_ACCESS_KEY:$S3_SECRET_KEY@s3-endpoint.example.com" \
                   FILENAME=`date "+%Y%m%d-%H%M%S"-all-databases.sql.lz` \
-                  mc pipe s3/bucket/$FILENAME
+                  mcli pipe s3/bucket/$FILENAME
 ```
