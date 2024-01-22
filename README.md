@@ -10,7 +10,7 @@ Docker image with all the necessary utilities to backup a Postgres or MariaDB/My
 
 See [Dockerfile](Dockerfile) for a full list of installed packages.
 
-## Example Usage in K8S CronJob
+## Example Usage in k8s CronJob
 
 ```yaml
 apiVersion: batch/v1

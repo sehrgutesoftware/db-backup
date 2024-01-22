@@ -9,6 +9,6 @@ RUN apk add --no-cache \
     xz \
     lzip \
     zstd \
-    gpg \
+    gpg gpg-agent \
     minio-client
 
