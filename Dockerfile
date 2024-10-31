@@ -10,5 +10,6 @@ RUN apk add --no-cache \
     lzip \
     zstd \
     gpg gpg-agent \
-    minio-client
+    minio-client \
+    mongodb-tools
 

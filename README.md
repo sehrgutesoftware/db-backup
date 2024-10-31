@@ -1,9 +1,10 @@
 # db-backup
 
-Docker image with all the necessary utilities to backup a Postgres or MariaDB/MySQL database to S3, with optional GPG encryption. The image is based on alpine. It contains:
+Docker image with all the necessary utilities to backup a Postgresm MariaDB/MySQL or MongoDB database to S3, with optional GPG encryption. The image is based on alpine. It contains:
 
 - pg_dump / pg_dumpall
 - mysqldump
+- mongodump
 - various compressors (gzip, bzip2, xz, lzip, zstd) along with their parallel versions, if available
 - gpg
 - mcli (minio client) for S3 uploads
