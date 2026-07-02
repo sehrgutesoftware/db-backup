@@ -8,6 +8,7 @@ Docker image with all the necessary utilities to backup a Postgres, MariaDB/MySQ
 - various compressors (gzip, bzip2, xz, lzip, zstd) along with their parallel versions, if available
 - gpg
 - mcli (minio client) for S3 uploads
+- kubectl
 
 See [Dockerfile](Dockerfile) for a full list of installed packages.
 

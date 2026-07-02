@@ -11,5 +11,5 @@ RUN apk add --no-cache \
     zstd \
     gpg gpg-agent \
     minio-client \
-    mongodb-tools
-
+    mongodb-tools \
+    kubectl
